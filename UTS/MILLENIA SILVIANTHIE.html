@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+.sidebar{
+    width: 200px;
+    height: 100%;
+    background-color: palevioletred;
+    position: fixed;
+    transition: width 1s;
+}
+.sidebar2{
+    width: 0;
+    height: 0;
+    background-color: palevioletred;
+    position: fixed;
+    overflow: auto;
+}
+.main{
+    background-color: pink;
+    margin-left: 200px;
+}
+.main2{
+    background-color: pink;
+    margin-left: 0px;
+}
+
+
+</style>
+
+<body>
+    
+    <div class="sidebar2" id="sidebar">
+        <span style="font-size: 30px; cursor: pointer;" onclick="closeNav()">X</span>
+        <li>Home</li>
+        <li>Profil</li>
+        <li>Contact</li>
+    </div>
+
+    <div class="main2" id="main">
+        <span style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776;</span>
+        <h1>Ini Content Utama</h1>
+    </div>
+
+    </div>
+
+    <!-- <script>
+        function closeNav(){
+            document.getElementById('sidebar').className="sidebar2";
+            document.getElementById('main').className="main2";
+        }
+        function openNav(){
+            document.getElementById('sidebar').className="sidebar";
+            document.getElementById('main').className="main";
+        }
+    </script> -->
+
+</body>
+</html>

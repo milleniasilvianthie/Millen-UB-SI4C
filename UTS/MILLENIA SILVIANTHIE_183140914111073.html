@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS</title>
+</head>
+
+<style>
+.sidebar{
+    width: 15%;
+    height: 100%;
+    background-color: #44749d;
+    position: fixed;
+    transition: width 3s;
+}
+.sidebar2{
+    width: 0;
+    height: 0;
+    background-color: #44749d;
+    position: fixed;
+    overflow: auto;
+    transition: width 3s;
+}
+.main{
+    margin-left: 200px;
+    transition: width 3s;
+    float: left;
+}
+.main2{
+    margin-left: 0px;
+    transition: width 3s;
+    padding: 3px 3px 3px 3px;
+}
+
+.kotak1{
+    width: 15%;
+    height: 400px;
+    background-color: #ebe7e0;
+    padding: 1px 1px 1px 1px;
+    float: right;
+    margin: 5px 5px 5px 5px;
+}
+.kotak{
+    width: 17%;
+    height: 150px;
+    background-color: #c6d4e1;
+    padding: 1px 1px 1px 1px;
+    float: right;
+    margin: 5px 5px 5px 5px;
+}
+.kotak2{
+    width: 950px;
+    height: 170px;
+    background-color: #c6d4e1;
+    float: right;
+}
+.kotak3{
+    width: 15%;
+    height: 400px;
+    background-color: #ebe7e0;
+    padding: 1px 1px 1px 1px;
+    float: right;
+    margin: 5px 5px 5px 5px;
+}
+
+
+
+</style>
+
+<body>
+    
+    <div class="sidebar2" id="sidebar">
+        <span style="font-size: 30px; cursor: pointer;" onclick="closeNav()">X</span>
+    </div>
+
+    <div class="main2" id="main">
+        <span style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776;</span>
+
+                <div class="kotak1"></div>
+                
+                <div class="kotak" type="button" id="kotak" onclick="hover()" style="background-color:  #c6d4e1;" ></div>
+                <div class="kotak" type="button" id="kotak" onclick="hover()" style="background-color:  #c6d4e1;" ></div>
+                <div class="kotak" type="button" id="kotak" onclick="hover()" style="background-color:  #c6d4e1;" ></div>
+                <div class="kotak" type="button" id="kotak" onclick="hover()" style="background-color:  #c6d4e1;" ></div>
+
+                <div class="kotak2"></div>
+
+                <div class="kotak3"></div>
+           
+                
+    </div>
+
+
+    <script>
+        function closeNav(){
+            document.getElementById('sidebar').className="sidebar2";
+            document.getElementById('main').className="main2";
+        }
+        function openNav(){
+            document.getElementById('sidebar').className="sidebar";
+            document.getElementById('main').className="main";
+        }
+    </script>
+
+</body>
+</html>
